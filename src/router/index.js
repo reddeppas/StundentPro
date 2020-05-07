@@ -46,7 +46,7 @@ let router = new Router({
     {
       path: '/intermaths',
       name: 'intermaths',
-      component: interchem,
+      component: intermaths,
       meta: {
         requiresAuth: true
       }
