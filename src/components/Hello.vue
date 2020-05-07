@@ -2,7 +2,7 @@
   <div class="hero">
     <div>
       <h1 class="display-3">Hello Students</h1>
-      <p class="lead">My Name is Nihal. Welcome to Intermediate Student Training Portal. StudentPro will provide practical based trainings </p>
+      <p class="lead">Welcome to Intermediate Student Training Portal. StudentPro will provide practical based trainings </p>
     </div>
   </div>
 </template>
