@@ -41,7 +41,7 @@ let database = new Sequelize({
 
 // Define our Post model
 // id, createdAt, and updatedAt are added by sequelize automatically
-let Post = database.define('posts', {
+let Chem = database.define('interchem', {
   title: Sequelize.STRING,
   body: Sequelize.TEXT
 })
@@ -54,8 +54,8 @@ finale.initialize({
 
 // Create the dynamic REST resource for our Post model
 let userResource = finale.resource({
-  model: Post,
-  endpoints: ['/posts', '/posts/:id']
+  model: Chem,
+  endpoints: ['/interchem', '/interchem/:id']
 })
 
 // Resets the database and launches the express app on :8081
