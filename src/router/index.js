@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
-import PostsManager from '@/components/PostsManager'
+import interchem from '@/components/interchem'
+import interphy from '@/components/interphy'
+import intermaths from '@/components/intermaths'
 import Auth from '@okta/okta-vue'
 
 Vue.use(Auth, {
