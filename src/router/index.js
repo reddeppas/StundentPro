@@ -26,9 +26,25 @@ let router = new Router({
       component: Auth.handleCallback()
     },
     {
-      path: '/posts-manager',
-      name: 'PostsManager',
-      component: PostsManager,
+      path: '/interchem',
+      name: 'interchem',
+      component: interchem,
+      meta: {
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/interphy',
+      name: 'interphy',
+      component: interphy,
+      meta: {
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/intermaths',
+      name: 'intermaths',
+      component: interchem,
       meta: {
         requiresAuth: true
       }
