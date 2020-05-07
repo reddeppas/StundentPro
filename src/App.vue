@@ -6,7 +6,7 @@
       <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav>
           <b-nav-item to="/">Home</b-nav-item>
-          <b-nav-item to="/interchem">Inter Chemistry</b-nav-item>
+          <b-nav-item to="/posts-manager">Inter Chemistry</b-nav-item>
           <b-nav-item to="/intermaths">Inter Maths</b-nav-item>
           <b-nav-item to="/interphy">Inter Physics</b-nav-item>
           <b-nav-item href="#" @click.prevent="login" v-if="!activeUser">Login</b-nav-item>

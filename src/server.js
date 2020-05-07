@@ -6,8 +6,8 @@ const finale = require('finale-rest')
 const OktaJwtVerifier = require('@okta/jwt-verifier')
 
 const oktaJwtVerifier = new OktaJwtVerifier({
-  clientId: '0oab7ipqlymqpcD5n4x6',
-  issuer: 'https://dev-608913.okta.com/oauth2/default'
+  clientId: '{clientId}',
+  issuer: 'https://{yourOktaDomain}/oauth2/default'
 })
 
 let app = express()
@@ -41,7 +41,7 @@ let database = new Sequelize({
 
 // Define our Post model
 // id, createdAt, and updatedAt are added by sequelize automatically
-let Chem = database.define('interchem', {
+let Post = database.define('posts', {
   title: Sequelize.STRING,
   body: Sequelize.TEXT
 })
@@ -54,8 +54,8 @@ finale.initialize({
 
 // Create the dynamic REST resource for our Post model
 let userResource = finale.resource({
-  model: Chem,
-  endpoints: ['/interchem', '/interchem/:id']
+  model: Post,
+  endpoints: ['/posts', '/posts/:id']
 })
 
 // Resets the database and launches the express app on :8081
