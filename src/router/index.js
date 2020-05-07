@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
-import interchem from '@/components/interchem'
+import PostsManager from '@/components/PostsManager'
 import interphy from '@/components/interphy'
 import intermaths from '@/components/intermaths'
 import Auth from '@okta/okta-vue'
@@ -28,9 +28,9 @@ let router = new Router({
       component: Auth.handleCallback()
     },
     {
-      path: '/interchem',
-      name: 'interchem',
-      component: interchem,
+      path: '/posts-manager',
+      name: 'PostsManager',
+      component: PostsManager,
       meta: {
         requiresAuth: true
       }
