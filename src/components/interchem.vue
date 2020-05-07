@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid mt-4">
-    <h1 class="h1">Chemistry - 1</h1>
+    <h1 class="h1">Posts Manager</h1>
     <b-alert :show="loading" variant="info">Loading...</b-alert>
     <b-row>
       <b-col>
@@ -14,10 +14,10 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="chem in interchem" :key="chem.id">
-              <td>{{ chem.id }}</td>
-              <td>{{ chem.title }}</td>
-              <td>{{ chem.updatedAt }}</td>
+            <tr v-for="post in posts" :key="post.id">
+              <td>{{ post.id }}</td>
+              <td>{{ post.title }}</td>
+              <td>{{ post.updatedAt }}</td>
               <td class="text-right">
                 <a href="#" @click.prevent="populatePostToEdit(post)">Edit</a> -
                 <a href="#" @click.prevent="deletePost(post.id)">Delete</a>
@@ -51,7 +51,7 @@ export default {
   data () {
     return {
       loading: false,
-      interchem: [],
+      posts: [],
       model: {}
     }
   },
@@ -64,8 +64,8 @@ export default {
       this.posts = await api.getPosts()
       this.loading = false
     },
-    async populatePostToEdit (chem) {
-      this.model = Object.assign({}, chem)
+    async populatePostToEdit (post) {
+      this.model = Object.assign({}, post)
     },
     async savePost () {
       if (this.model.id) {
