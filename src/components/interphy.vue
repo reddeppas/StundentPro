@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid mt-4">
-    <h1 class="h1">Inter Physics</h1>
+    <h1 class="h1">Physics</h1>
     <p>Only authenticated users should see this page</p>
   </div>
 </template>
