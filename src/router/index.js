@@ -38,7 +38,7 @@ let router = new Router({
     {
       path: '/interphy',
       name: 'interphy',
-      component: interphy,
+      component: PostsManager,
       meta: {
         requiresAuth: true
       }
@@ -46,7 +46,7 @@ let router = new Router({
     {
       path: '/intermaths',
       name: 'intermaths',
-      component: intermaths,
+      component: PostsManager,
       meta: {
         requiresAuth: true
       }
