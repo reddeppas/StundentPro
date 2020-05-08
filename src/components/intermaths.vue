@@ -1,10 +1,3 @@
-import { vueVimeoPlayer } from 'vue-vimeo-player'
-
-export default {
-    data: {},
-    components: { vueVimeoPlayer }
-}
-
 <template>
     <vimeo-player ref="player" :video-id="videoID" @ready="onReady" :player-height="height">
     </vimeo-player>
