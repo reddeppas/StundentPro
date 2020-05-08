@@ -5,7 +5,6 @@ import PostsManager from '@/components/PostsManager'
 import interphy from '@/components/interphy'
 import intermaths from '@/components/intermaths'
 import Auth from '@okta/okta-vue'
-import Vue from 'vue'
 
 Vue.use(Auth, {
   issuer: 'https://dev-608913.okta.com/oauth2/default',
