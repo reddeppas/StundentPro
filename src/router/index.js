@@ -5,7 +5,6 @@ import PostsManager from '@/components/PostsManager'
 import interphy from '@/components/interphy'
 import intermaths from '@/components/intermaths'
 import Auth from '@okta/okta-vue'
-import Vue from 'vue'
 import vueVimeoPlayer from 'vue-vimeo-player'
 
 Vue.use(Auth, {
@@ -14,7 +13,7 @@ Vue.use(Auth, {
   redirect_uri: 'http://xpertdevops.com:8080/implicit/callback',
   scope: 'openid profile email'
 })
-
+Vue.use(vueVimeoPlayer)
 Vue.use(Router)
 
 let router = new Router({
