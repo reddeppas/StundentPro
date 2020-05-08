@@ -8,16 +8,16 @@
 </template>
 <script>
 export default {
-  data() {
+  data () {
     return {
       videoID: '141851770',
       height: 600,
       options: {},
-      playerReady: false,
+      playerReady: false
     }
   },
   methods: {
-    onReady() {
+    onReady () {
       this.playerReady = true
     },
     play () {
