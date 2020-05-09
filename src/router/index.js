@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
-import PostsManager from '@/components/PostsManager'
-import interphy from '@/components/interphy'
-import intermaths from '@/components/intermaths'
+import Hello from '@/components/home'
+import cks from '@/components/cks'
+import devops from '@/components/devops'
+import cicd from '@/components/cicd'
 import Auth from '@okta/okta-vue'
 import vueVimeoPlayer from 'vue-vimeo-player'
 
