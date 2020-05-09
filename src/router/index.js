@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/home'
+import home from '@/components/home'
 import cks from '@/components/cks'
 import devops from '@/components/devops'
 import cicd from '@/components/cicd'
