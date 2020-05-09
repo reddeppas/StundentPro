@@ -5,7 +5,6 @@
       <b-navbar-brand to="/">XpertDevops</b-navbar-brand>
       <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav>
-          <b-nav-item to="/">Home</b-nav-item>
           <b-nav-item to="/devops">Why Devops?</b-nav-item>
           <b-nav-item to="/cicd">CI/CD</b-nav-item>
           <b-nav-item to="/cks">Containers/Kubernates</b-nav-item>
