@@ -22,18 +22,18 @@ export default {
     })
   },
   getPosts () {
-    return this.execute('get', '/posts')
+    return this.execute('get', '/cks')
   },
   getPost (id) {
-    return this.execute('get', `/posts/${id}`)
+    return this.execute('get', `/cks/${id}`)
   },
   createPost (data) {
-    return this.execute('post', '/posts', data)
+    return this.execute('post', '/cks', data)
   },
   updatePost (id, data) {
-    return this.execute('put', `/posts/${id}`, data)
+    return this.execute('put', `/cks/${id}`, data)
   },
   deletePost (id) {
-    return this.execute('delete', `/posts/${id}`)
+    return this.execute('delete', `/cks/${id}`)
   }
 }

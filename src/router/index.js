@@ -21,33 +21,33 @@ let router = new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: Hello
+      name: 'home',
+      component: home
     },
     {
       path: '/implicit/callback',
       component: Auth.handleCallback()
     },
     {
-      path: '/posts-manager',
-      name: 'PostsManager',
-      component: PostsManager,
+      path: '/cks',
+      name: 'cks',
+      component: cks,
       meta: {
         requiresAuth: true
       }
     },
     {
-      path: '/interphy',
-      name: 'interphy',
-      component: interphy,
+      path: '/cicd',
+      name: 'cicd',
+      component: cicd,
       meta: {
         requiresAuth: true
       }
     },
     {
-      path: '/intermaths',
-      name: 'intermaths',
-      component: intermaths,
+      path: '/devops',
+      name: 'devops',
+      component: devops,
       meta: {
         requiresAuth: true
       }

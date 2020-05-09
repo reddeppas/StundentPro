@@ -6,10 +6,10 @@
       <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav>
           <b-nav-item to="/">Home</b-nav-item>
-          <b-nav-item to="/intermaths">Why Devops?</b-nav-item>
-          <b-nav-item to="/interphy">CI/CD</b-nav-item>
-          <b-nav-item to="/posts-manager">Containers/Kubernates</b-nav-item>
-          <b-nav-item to="/posts-manager">Infrastructure as a Code</b-nav-item>
+          <b-nav-item to="/devops">Why Devops?</b-nav-item>
+          <b-nav-item to="/cicd">CI/CD</b-nav-item>
+          <b-nav-item to="/cks">Containers/Kubernates</b-nav-item>
+          <b-nav-item to="/iac">Infrastructure as a Code</b-nav-item>
           <b-nav-item href="#" @click.prevent="login" v-if="!activeUser">Login</b-nav-item>
           <b-nav-item href="#" @click.prevent="logout" v-else>Logout</b-nav-item>
         </b-navbar-nav>
