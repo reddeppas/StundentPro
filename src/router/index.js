@@ -4,6 +4,7 @@ import home from '@/components/home'
 import cks from '@/components/cks'
 import devops from '@/components/devops'
 import cicd from '@/components/cicd'
+import iac from '@/components/iac'
 import Auth from '@okta/okta-vue'
 import vueVimeoPlayer from 'vue-vimeo-player'
 
@@ -48,6 +49,14 @@ let router = new Router({
       path: '/devops',
       name: 'devops',
       component: devops,
+      meta: {
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/iac',
+      name: 'iac',
+      component: iac,
       meta: {
         requiresAuth: true
       }
