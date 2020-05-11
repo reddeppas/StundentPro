@@ -11,7 +11,7 @@ import vueVimeoPlayer from 'vue-vimeo-player'
 Vue.use(Auth, {
   issuer: 'https://dev-608913.okta.com/oauth2/default',
   client_id: '0oab7ipqlymqpcD5n4x6',
-  redirect_uri: 'http://xpertdevops.com:8080/implicit/callback',
+  redirect_uri: 'https://xpertdevops.com/implicit/callback',
   scope: 'openid profile email'
 })
 Vue.use(vueVimeoPlayer)

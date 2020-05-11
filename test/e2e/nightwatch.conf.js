@@ -23,7 +23,7 @@ module.exports = {
       selenium_host: 'localhost',
       silent: true,
       globals: {
-        devServerURL: 'http://xpertdevops:' + (process.env.PORT || config.dev.port)
+        devServerURL: 'https://xpertdevops:' + (process.env.PORT || config.dev.port)
       }
     },
 

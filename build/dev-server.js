@@ -66,7 +66,7 @@ app.use(devMiddleware)
 const staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
 app.use(staticPath, express.static('./static'))
 
-const uri = 'http://xpertdevops.com:' + port
+const uri = 'https://xpertdevops.com:' + port
 
 let _resolve
 const readyPromise = new Promise(resolve => {
