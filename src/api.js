@@ -2,7 +2,7 @@ import Vue from 'vue'
 import axios from 'axios'
 
 const client = axios.create({
-  baseURL: 'https://xpertdevops.com',
+  baseURL: 'http://',
   json: true
 })
 

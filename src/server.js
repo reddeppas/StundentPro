@@ -62,7 +62,7 @@ let userResource = finale.resource({
 database
   .sync({ force: true })
   .then(() => {
-    app.listen(443, () => {
-      console.log('listening to port xpertdevops.com:443')
+    app.listen(8081, () => {
+      console.log('listening to port xpertdevops.com:8081')
     })
   })
